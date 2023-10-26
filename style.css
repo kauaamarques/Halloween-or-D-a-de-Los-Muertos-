@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(./fonts/Chentenario.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c5c5c5; /*escolha a cor do plano de fundo*/
+    background-image: url(https://img.freepik.com/fotos-premium/foto-colorida-caveira-dia-dos-mortos-dia-de-muertos-generative-ai_742418-5946.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute; /*torna possivel alterar a posição do container*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*alterar posição do eixo*/
+}
+
+h1 {
+    font-family: font1;
+    color: rgb(255, 0, 0);
+    
+}
+
+.navegacao {
+    position: absolute; /*posição em relação ao container */
+    bottom: 20px; /* distancia a partir da base */
+    left: 50%; /*distancia a partir da esquerda*/
+    transform: translate(-50%); /*alterar o eixo principal*/
+    display: flex; /*colocar o conteúdo lado a lado*/
+}
+
+.bar {
+    background-color: rgb(255, 21, 165);
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+}
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667%;
+}
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333333%;
+}
+#imagem4:checked ~ .img1 {
+    margin-left: -50%;
+}
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666667%;
+}
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333%;
+}
+
+h1{
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: font1 ;
+    color: rgb(241, 0, 0);
+    height: 13%;
+}
